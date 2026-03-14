@@ -32,4 +32,4 @@ Rscript -e "shiny::runApp('app.R')"
 
 ## Deployed App
 
-[Link to deployed app on Posit Connect Cloud](<!-- TODO: paste your Posit Connect Cloud URL here -->)
+[Link to deployed app on Posit Connect Cloud](https://pat0216-vancrimewatch-r.share.connect.posit.cloud/)
