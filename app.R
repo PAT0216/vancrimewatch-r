@@ -4,14 +4,13 @@ library(plotly)
 library(DT)
 library(readr)
 
-# -- Load data ----------------------------------------------------------------
 df <- read_csv("data/combined_crime_data_2023_2025.csv", show_col_types = FALSE)
 df$year <- as.character(df$YEAR)
 
 neighbourhoods <- sort(unique(df$NEIGHBOURHOOD))
 crime_types <- sort(unique(df$TYPE))
 
-# -- UI -----------------------------------------------------------------------
+
 ui <- fluidPage(
     titlePanel("VanCrimeWatch (R)"),
     sidebarLayout(
@@ -102,5 +101,5 @@ server <- function(input, output, session) {
     })
 }
 
-# -- Run app ------------------------------------------------------------------
+
 shinyApp(ui, server)
